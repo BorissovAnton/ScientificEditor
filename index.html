@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essay Writing App</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="sidebar left-sidebar">
+            <div class="outline-container">
+                <h2>Outline</h2>
+                <div id="outline-topics"></div>
+                <button id="add-topic">+ Create outline topic</button>
+            </div>
+        </div>
+        <div class="main-content">
+            <div id="editor" contenteditable="true"></div>
+        </div>
+        <div class="sidebar right-sidebar">
+            <div class="workspace-settings">
+                <h2>Workspace settings</h2>
+                <!-- Add workspace settings here -->
+            </div>
+        </div>
+    </div>
+    <script src="scripts/app.js" type="module"></script>
+</body>
+</html>

@@ -28,11 +28,33 @@ body, html {
     flex-grow: 1;
     padding: 20px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 #editor {
-    min-height: 100%;
+    flex-grow: 1;
     outline: none;
+    overflow-y: auto;
+}
+
+.latex-panel {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+#latex-input, #latex-output {
+    width: 100%;
+    min-height: 50px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+#latex-input[placeholder]:empty:before {
+    content: attr(placeholder);
+    color: #888;
 }
 
 .outline-container h2, .workspace-settings h2 {

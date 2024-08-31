@@ -17,11 +17,19 @@
             </div>
         </div>
         <div class="main-content">
-            <div id="editor" contenteditable="true"></div>
+            <div id="editor-container"></div>
             <div class="latex-panel">
                 <h3>LaTeX Preview</h3>
                 <div id="latex-input" contenteditable="true" placeholder="Enter LaTeX here..."></div>
                 <div id="latex-output"></div>
+                <button id="insert-latex">Insert LaTeX</button>
+            </div>
+            <!-- New plain text compiler panel -->
+            <div class="plain-text-compiler">
+                <h3>Plain Text Compiler</h3>
+                <textarea id="plain-text-input" placeholder="Enter plain text with LaTeX expressions here..."></textarea>
+                <button id="compile-text">Compile</button>
+                <div id="compiled-output"></div>
             </div>
         </div>
         <div class="sidebar right-sidebar">
